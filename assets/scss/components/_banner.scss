@@ -1,0 +1,13 @@
+.banner{
+   background: url(../images/black-banner.jpg) no-repeat center center/cover;
+
+
+   .banner-nav-links{
+      background: $color-cornflower;
+
+      a{
+         color: $color-white;
+         font-family: Siemens-Sans-Bold;
+      }
+   }
+}

@@ -1,0 +1,19 @@
+.footer{
+   .footer-top{
+      background: $color-ash-black;
+      padding: 80px 0;
+   
+      @media(max-width:767px){
+         padding: 50px 0;
+      }
+   
+      ul{
+         li{
+            a{
+               color: $color-white;
+               font-size: 14px;
+            }
+         }
+      }
+   }
+}

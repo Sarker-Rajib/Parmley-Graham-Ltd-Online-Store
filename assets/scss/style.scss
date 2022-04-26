@@ -1,0 +1,36 @@
+/*=== abstracts css start === */
+@import 'abstracts/fonts';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+/*===// end of abstracts css === */
+
+
+/*=== base css start === */
+@import 'base/global';
+@import 'base/config';
+@import 'base/utility';
+/*===// end of base css === */
+
+
+/*=== components css start === */
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/banner';
+@import 'components/manufacture-n-category';
+@import 'components/module';
+@import 'components/partner';
+/*===// end of components css === */
+
+
+/*=== layouts css start === */
+@import 'layouts/navbar';
+@import 'layouts/footer';
+/*===// end of layouts css === */
+
+
+
+/*=== pages start === */
+
+/*===// end of pages  === */
+
+

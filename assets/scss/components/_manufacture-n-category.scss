@@ -1,0 +1,33 @@
+.manufacture-n-category{
+   padding: 80px 0;
+
+   @media(max-width:767px){
+      padding: 50px 0;
+   }
+
+   .manufacture-n-category-card{
+      padding: 115px;
+
+      @media(max-width:767px){
+         padding: 30px;
+      }
+
+      &.first{
+         background: url(../images/blue-van-banner.jpg) no-repeat center center/cover;
+      }
+      &.second{
+         background: url(../images/green-woman-banner.jpg) no-repeat center center/cover;
+      }
+
+
+      h2{
+         font-size: 35px;
+         color: $color-white;
+      }      
+      p{
+         font-size: 16px;
+         color: $color-white;
+      }      
+   }
+
+}
