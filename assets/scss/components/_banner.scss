@@ -1,19 +1,20 @@
 .banner{
-   background: url(../images/black-banner.jpg) no-repeat center center/cover;
-   margin-top: 56px;
-   padding: 60px 0;
+   margin-top: 122px;
 
    @media(max-width: 991px) {
       margin-top: 117px;
    }
-   @media(max-width: 768px) {
+   @media(max-width: 767px) {
       margin-top: 56px;
    }
 
    .main-banner{
+      background: url(../images/black-banner.jpg) no-repeat center center/cover;
+      padding: 60px 0;
+
       .search-area{
          padding: 50px 0;
-   
+
          .section-header{
             h1{
                font-family: Siemens-Sans-Bold;
@@ -27,7 +28,7 @@
    
          .search-box{
             height: 48px;
-   
+
             .input-area{
                border-radius: 0;
             }
@@ -37,7 +38,6 @@
                border: none;
                background: $color-cornflower;
             }
-   
          }
       }
    
@@ -61,11 +61,13 @@
 
 
    .banner-nav-links{
+      padding:  17px 0;
       background: $color-cornflower;
 
       a{
          color: $color-white;
-         font-family: Siemens-Sans-Bold;
+         font-family: Siemens-Sans-Regular;
+         text-transform: uppercase;
       }
    }
 }

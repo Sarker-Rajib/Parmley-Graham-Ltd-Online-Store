@@ -59,56 +59,6 @@
       .mobile-nav{
          padding: 10px 0;
 
-         .search-box{
-            .offcanvas-customed{
-               height: 50vh;
-               .search-nav-collapse{
-                  .wrap{
-                     width: 75%;
-                     position: absolute;
-                     top: 50%;
-                     left: 50%;
-                     transform: translate(-50%, -50%);
-
-                     .searchButton {
-                        height: 36px;
-                        padding: 0 10px;
-                        border: 1px solid $color-olympic;
-                        background: $color-olympic;
-                        text-align: center;
-                        color: #fff;
-                        border-radius: 0 5px 5px 0;
-                        cursor: pointer;
-                        font-size: 20px;
-
-                        &.text{
-                           border-radius: 5px;
-                           margin-top: 25px;
-                        }
-                     }
-
-                     .search {
-                        width: 100%;
-                        position: relative;
-                        display: flex;
-                
-                        .searchTerm {
-                           width: 100%;
-                           border: 3px solid $color-yellow;
-                           border-right: none;
-                           padding: 5px;
-                           height: 36px;
-                           border-radius: 5px 0 0 5px;
-                           outline: none;
-                           color: $color-black;
-                        }
-                     }
-                   }
-               }
-            }
-         }
-
-
          .right-content{
             .cart-area{
                display: flex;
@@ -157,6 +107,50 @@
                            }
                         }
                      }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .category-nav{
+      padding: 10px 0;
+      .contents{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0;
+
+         li{
+            align-items: center;
+            margin-right: 0 3px;
+            a{
+               font-family: Siemens-Sans-Regular;
+               color: $color-ash-black;
+               font-size: 12px;
+            }
+
+            &.search-box{
+               .customed-btn{
+                  display: flex; 
+                  align-items: center;
+
+                  .input-area{
+                     max-width: 58px;
+                     height: 25px;
+                     border-top: 2px solid $color-yellow;
+                     border-bottom: 2px solid $color-yellow;
+                     border-left: 2px solid $color-yellow;
+                  }
+
+                  .btn-search{
+                     height: 25px;
+                     border: none;
+                     background: $color-cornflower;
+                     display: flex;
+                     align-items: center;
+                     padding: 5px;
                   }
                }
             }
