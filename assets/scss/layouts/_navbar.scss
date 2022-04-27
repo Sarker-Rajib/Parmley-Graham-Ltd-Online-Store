@@ -1,3 +1,193 @@
 .header{
-   background: #212529;
+
+   .nav{
+      background: $color-ash-black;
+      align-items: center;
+
+      .desktop-nav{
+         padding: 10px 0;
+         .contact{
+            @media(max-width: 991px){
+               justify-content: center;
+            }
+
+            p{
+               color:$color-white;
+               font-size: 14px;
+   
+               a{
+                  color: $color-yellow;
+                  font-size: 14px;
+               }
+            }
+         }
+         .log-in-nav{
+            a{
+               color: $color-white;
+               margin-left: 15px;
+               font-size: 14px;
+               &:hover{
+                  opacity: 0.7;
+               }
+
+               .icon{
+                  font-size: 17px;
+               }
+            }
+         }
+      }
+
+      .mobile-nav{
+         padding: 10px 0;
+
+         .left-hidden-menu{
+            .customed-btn{
+               background: transparent;
+               border: none;
+            }
+
+            .offcanvas-customed{
+               top: 55px;
+               height: 70vh;
+
+
+               .offcanvas-body{
+                  ul{
+                     li{
+                        margin-bottom: 10px;
+
+                        a{
+                           color: $color-ash-black;
+                        }
+                     }
+                  }
+
+               }
+            }
+         }
+
+         .search-box{
+            .customed-btn{
+               background: transparent;
+               border: none;
+            }
+
+            .offcanvas-customed{
+               top: 55px;
+               height: 50vh;
+
+               .search-nav-collapse{
+                  
+                  .wrap{
+                     width: 75%;
+                     position: absolute;
+                     top: 50%;
+                     left: 50%;
+                     transform: translate(-50%, -50%);
+
+                     .searchButton {
+                        height: 36px;
+                        padding: 0 10px;
+                        border: 1px solid $color-olympic;
+                        background: $color-olympic;
+                        text-align: center;
+                        color: #fff;
+                        border-radius: 0 5px 5px 0;
+                        cursor: pointer;
+                        font-size: 20px;
+
+                        &.text{
+                           border-radius: 5px;
+                           margin-top: 25px;
+                        }
+                     }
+
+                     .search {
+                        width: 100%;
+                        position: relative;
+                        display: flex;
+
+                                                
+                        .searchTerm {
+                           width: 100%;
+                           border: 3px solid $color-yellow;
+                           border-right: none;
+                           padding: 5px;
+                           height: 36px;
+                           border-radius: 5px 0 0 5px;
+                           outline: none;
+                           color: $color-black;
+                        }
+                     }
+                   }
+               }
+            }
+         }
+
+
+         .right-content{
+            .cart-area{
+               display: flex;
+               align-items: center;
+
+               .cart-logo{
+                  .cart{
+                     color: $color-white;
+                     position: relative;
+                     display: flex;
+
+                     .sup{
+                        position: relative;
+                        top: -10px;
+                        right: -3px;
+                        padding: 5px;
+                        border-radius: 50%;
+                        height: 20px;
+                        width: 20px;
+                        background: $color-cornflower;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;                        
+                     }
+
+                  }
+               }
+            }
+
+            .right-hidden-menu{
+               .customed-btn{
+                  background: transparent;
+                  border: none;
+               }
+   
+               .offcanvas-customed{
+                  top: 55px;
+                  height: 60vh;
+   
+                  .offcanvas-body{
+                     .log-in-n-contact-collapsed{
+                        ul{
+                           li{
+                              margin-bottom: 10px;
+      
+                              a{
+                                 text-transform: uppercase;
+                                 color: $color-ash-black;
+                              }
+   
+                              p{
+                                 color: $color-ash-black;
+                                 a{
+                                    color: $color-yellow;
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
 }

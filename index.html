@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Parmley Graham Ltd Online Store</title>
-  <link rel='shortcut icon' href='assets/images/svg-icons/white-logo.svg' type='image/x-icon'>
+  <link rel='shortcut icon' href='assets/images/svg-icons/pg-logo.svg' type='image/x-icon'>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/vendor/jssor/css/jssor.css">
@@ -19,25 +19,25 @@
     <div class="nav">
       <div class="container">
           <!-- Desktop -->
-          <div class="d-none d-md-block">
+          <div class="desktop-nav d-none d-md-block">
               <div class="row align-items-center">
-                  <div class="col-xl-5 col-lg-5 text-center text-lg-start">
-                      <div>
-                       <p>TECHNICAL SUPPORT<a href="tel:0191 478 0404" >0191 478 0404</a>
-                        <p>SALES<a href="tel:0191 478 0400" class="brand-orange">0191 478 0400</a></p>
+                  <div class=" col-lg-5 text-center text-lg-start">
+                      <div class="contact d-flex">
+                          <p class="pe-3">TECHNICAL SUPPORT <a href="tel:0191 478 0404" >0191 478 0404</a>
+                          <p>SALES <a href="tel:0191 478 0400" class="brand-orange">0191 478 0400</a></p>
                       </div>
                   </div>
-                  <div class="col-xl-1 col-lg-2 text-center">
+                  <div class="col-lg-2 text-center">
                       <a href="#"> <img src="assets/images/svg-icons/white-logo.svg" alt="parmley graham ltd" width="63"></a>
                   </div>
-                  <div class="col-xl-6 col-lg-5 text-center text-lg-end ">
+                  <div class=" col-lg-5 text-center text-lg-end ">
                       <div class="row align-items-center">
                           <div class="col-lg-12 col-md-12 center text-lg-right">
-                              <nav class="topline horizontal">
-                                  <a href="#">  <i class="fal fa-sign-in"></i> LOGIN </a>
-                                  <a href="#">   <i class="fal fa-user"></i>REGISTER</a>
-                                  <a href="#"> <i class="fal fa-shopping-cart"></i>CART <sup>0</sup></a>
-                                  <a href="#"> <i class="far fa-question-circle"></i>ASK A QUESTION  </a>
+                              <nav class="log-in-nav">
+                                  <a href="#"> <i class="fal fa-sign-in icon pe-1"></i> LOGIN </a>
+                                  <a href="#"> <i class="fal fa-user icon pe-1"></i>REGISTER</a>
+                                  <a href="#"> <i class="fal fa-shopping-cart icon pe-1"></i>CART <sup>0</sup></a>
+                                  <a href="#"> <i class="far fa-question-circle icon pe-1"></i>ASK A QUESTION  </a>
                               </nav>
                           </div>
                       </div>
@@ -46,29 +46,71 @@
           </div>
           
           <!-- Mobile -->
-          <div class="d-md-none">
-              <div class="row align-items-center buffered">
+          <div class="d-md-none mobile-nav">
+              <div class="row align-items-center">
                   <div class="col-5 text-start">
-                      <nav class="">
-
-                          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#leftcollapse" aria-controls="leftcollapse">
+                      <nav class="d-flex align-items-center">
+                        <div class="left-hidden-menu">
+                          <button class="btn btn-primary customed-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#leftcollapse" aria-controls="leftcollapse">
                             <i class="far fa-bars"></i>
                           </button>
                           
-                          <div class="offcanvas offcanvas-start" tabindex="-1" id="leftcollapse" aria-labelledby="leftcollapseLabel">
+                          <div class="offcanvas offcanvas-top offcanvas-customed" tabindex="-1" id="leftcollapse" aria-labelledby="leftcollapseLabel">
                             <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="leftcollapseLabel">Offcanvas</h5>
                               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
-
-                              <div class="bg-dark">
-                                <p>Lorem ipsum dolor sit amet.</p>
+                              <div class="category-nav-collapese">
+                                <ul>
+                                    <li><a href="#">Automation</a></li>
+                                    <li><a href="#">Industry 4 & Robotics</a></li>
+                                    <li><a href="#">Industrial Communication</a></li>
+                                    <li><a href="#">Identification</a></li>
+                                    <li><a href="#">Variable Speed Drives</a></li>
+                                    <li><a href="#">LV Controlgear</a></li>
+                                    <li><a href="#">Switchgear and Circuit Protection</a></li>
+                                    <li><a href="#">Power Supplies & Transformers</a></li>
+                                    <li><a href="#">Safety</a></li>
+                                    <li><a href="#">Process Instrumentation</a></li>
+                                    <li><a href="#">Terminals & Connection System</a></li>
+                                    <li><a href="#">Enclosures & Climate Control</a></li>
+                                    <li><a href="#">Enclosures & Climate Control</a></li>
+                                    <li><a href="#">Sensors</a></li>
+                                    <li><a href="#">Vision & Lighting</a></li>
+                                </ul>                                
                               </div>
-
+  
                             </div>
                           </div>
-                          <i class="far fa-search"></i>
+                        </div>
+
+                        <div class="search-box">
+                          <button class="btn btn-primary customed-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#findOut" aria-controls="findOut">
+                            <i class="far fa-search"></i>
+                          </button>
+                          
+                          <div class="offcanvas offcanvas-top offcanvas-customed" tabindex="-1" id="findOut" aria-labelledby="findOutLabel">
+                            <div class="offcanvas-header">
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <div class="search-nav-collapse">
+                                <form class="wrap text-center">
+                                  <div class="search">
+                                     <input type="text" class="searchTerm" placeholder="Search By Product Name">
+                                     <button type="submit" class="searchButton icon">
+                                       <i class="fas fa-search"></i>
+                                    </button>
+                                  </div>
+
+                                  <button type="submit" class="searchButton text">
+                                     Search
+                                  </button>
+                               </form>                            
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </nav>
                   </div>
 
@@ -77,29 +119,41 @@
                   </div>
 
                   <div class="col-5 text-end">
-                      <nav class="horizontal">
-                          <a href="#">  <i class="fal fa-shopping-cart"><sup>0</sup></i></a>
+                      <nav class="d-flex justify-content-end align-items-center right-content">
+                        <div class="cart-area">
+                          <a class="cart-logo me-2 text-white" href="#"><i class="fal fa-shopping-cart cart"><sup class="sup">0</sup></i></a>
+                        </div>
 
-                          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="far fa-ellipsis-v"></i></button>
+                        <div class="right-hidden-menu">
+                          <button class="btn btn-primary customed-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="far fa-ellipsis-v"></i></button>
 
-                          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header">
-                              <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                          <div class="offcanvas offcanvas-top offcanvas-customed" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header text-end pt-2 pe-4">
                               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
-                              <div class="bg-dark">
-                                <p>Lorem ipsum dolor sit amet.</p>
+                              <div class="log-in-n-contact-collapsed">
+                                <ul class="text-start">
+                                  <li><a href="#"> <i class="fal fa-sign-in icon me-1"></i> LOGIN </a></li>
+                                  <li><a href="#"> <i class="fal fa-user icon me-1"></i> Create an ACCOUtn</a></li>
+                                  <li><a href="#"> <i class="far fa-question-circle icon me-1"></i>ASK A QUESTION  </a></li>
+                                  <li><a href="#"> <i class="fal fa-map-marker-alt me-1"></i> Location </a></li>
+                                  <li><a href="#"> <i class="far fa-info-circle"></i> about us </a></li>
+                                  <li><p class="pe-3">TECHNICAL SUPPORT<br><a href="tel:0191 478 0404" >0191 478 0404</a></li>
+                                  <li><p>SALES <br><a href="tel:0191 478 0400" class="brand-orange">0191 478 0400</a></p> </li>         
+                                </ul>
                               </div>
                             </div>
                           </div>
+                        </div>
                       </nav>
                   </div>
               </div>
           </div>
       </div>
   </div>
-  <div class="category-nav bg-dark d-none d-md-block">
+
+  <!-- <div class="category-nav d-none d-md-block">
     <div class="container-fluid">
       <nav class=" justify-content-between">
         <a href="#">Automation</a>
@@ -119,7 +173,7 @@
         <a href="#">Vision & Lighting</a>
       </nav>
     </div>
-  </div>
+  </div> -->
   
   </header>
   <!-- ===//end of header section === -->
@@ -181,7 +235,7 @@
       </div>
     </div>
     
-    <div class="banner-nav-links py-4">
+    <!-- <div class="banner-nav-links py-4">
       <div class="container">
         <div class="row text-center">
           <div class="col-1">
@@ -207,7 +261,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
   <!-- ===//end of banner section === -->
  
