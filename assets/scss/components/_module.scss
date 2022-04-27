@@ -2,7 +2,7 @@
    padding: 60px 0;
 
    @media(max-width:767px){
-      padding: 50px 0;
+      padding: 40px 0;
    }
 
    .module-1{
@@ -12,6 +12,7 @@
             padding: 20px;
          }
 
+         // background
          &.first{
             background: url(../images/EVENEWS.jpg) no-repeat center center/cover;
          }
@@ -40,6 +41,8 @@
       .module-bottom{
          padding: 40px;
 
+
+         // background
          &.first{
             background: url(../images/woman-careers-pg.jpg) no-repeat center center/cover;
          }

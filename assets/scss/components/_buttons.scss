@@ -24,10 +24,12 @@
    padding: 12px;
    width: 100%;
    max-width: 200px;
+   border-radius: 0px;
+
 
    &:hover{
       color: $color-white;
-      opacity: 0.7
+      opacity: 0.7;
    }
 }
 

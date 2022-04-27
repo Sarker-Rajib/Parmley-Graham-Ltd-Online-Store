@@ -1,6 +1,5 @@
 /*=== abstracts css start === */
 @import 'abstracts/fonts';
-@import 'abstracts/mixins';
 @import 'abstracts/variables';
 /*===// end of abstracts css === */
 
@@ -8,7 +7,6 @@
 /*=== base css start === */
 @import 'base/global';
 @import 'base/config';
-@import 'base/utility';
 /*===// end of base css === */
 
 
@@ -28,11 +26,3 @@
 @import 'layouts/navbar';
 @import 'layouts/footer';
 /*===// end of layouts css === */
-
-
-
-/*=== pages start === */
-
-/*===// end of pages  === */
-
-
