@@ -6,7 +6,9 @@
    }
 
    .manufacture-n-category-card{
-      padding: 115px;
+      padding: 98px 42px;
+      display: grid;
+      place-items: center;
 
       @media(max-width:767px){
          padding: 30px;
@@ -21,13 +23,24 @@
 
 
       h2{
+         font-family: Siemens-Sans-Bold;
          font-size: 35px;
          color: $color-white;
+         margin-bottom: 40px;
       }      
       p{
+         width: 75%;
+         font-family: Siemens-Sans-Regular;
          font-size: 16px;
          color: $color-white;
-      }      
+         text-transform: uppercase;
+         padding: 16px 32px;
+         border: 1px solid $color-white;
+      } 
+      
+      &:hover{
+         opacity: 0.7
+      }
    }
 
 }

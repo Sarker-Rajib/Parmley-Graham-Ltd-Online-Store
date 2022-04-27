@@ -1,5 +1,6 @@
 .partner{
    padding: 80px 0;
+   background: $color-off-white;
 
    @media(max-width:767px){
       padding: 50px 0;
@@ -7,7 +8,17 @@
 
    img{
       max-width: 210px;
-   }
-
+      margin-bottom: 30px;
+   } 
    
+   .p-text{
+      font-family: Siemens-Sans-Bold;
+      font-size: 22px;
+      color: $color-black;
+      margin: 35px 0;
+
+      span{
+         color: $color-cornflower
+      }
+   }
 }

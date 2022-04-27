@@ -1,0 +1,23 @@
+.offcanvas-customed{
+   top: 55px;
+   height: 75vh;
+
+
+   .offcanvas-body{
+      padding-top: 0px;
+      ul{
+         li{
+            margin-bottom: 15px;
+
+            a{
+               color: $color-ash-black;
+
+               &:hover{
+                  opacity: 0.7;
+               }
+            }
+         }
+      }
+
+   }
+}

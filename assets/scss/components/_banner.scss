@@ -1,6 +1,63 @@
 .banner{
-   padding-top: 55px;
    background: url(../images/black-banner.jpg) no-repeat center center/cover;
+   margin-top: 56px;
+   padding: 60px 0;
+
+   @media(max-width: 991px) {
+      margin-top: 117px;
+   }
+   @media(max-width: 768px) {
+      margin-top: 56px;
+   }
+
+   .main-banner{
+      .search-area{
+         padding: 50px 0;
+   
+         .section-header{
+            h1{
+               font-family: Siemens-Sans-Bold;
+               font-size: 42px;
+   
+               span{
+                  color: $color-yellow;
+               }
+            }
+         }
+   
+         .search-box{
+            height: 48px;
+   
+            .input-area{
+               border-radius: 0;
+            }
+   
+            .btn-search{
+               border-radius: 0;
+               border: none;
+               background: $color-cornflower;
+            }
+   
+         }
+      }
+   
+      .banner-links{
+         ul{
+            li{
+               margin-right: 20px;
+               a{
+                  text-transform: uppercase;
+                  font-size: 14px;
+                  color: $color-white;
+
+                  i{
+                     font-size: 27px;
+                  }
+               }
+            }
+         }
+      }
+   }
 
 
    .banner-nav-links{

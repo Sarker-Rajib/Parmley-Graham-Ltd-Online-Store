@@ -1,5 +1,4 @@
 .header{
-
    .nav{
       background: $color-ash-black;
       align-items: center;
@@ -21,6 +20,7 @@
                }
             }
          }
+
          .log-in-nav{
             a{
                color: $color-white;
@@ -32,6 +32,25 @@
 
                .icon{
                   font-size: 17px;
+
+                  &.cart{
+                     position: relative;
+                     margin-right: 10px;
+
+                     .sup{
+                        position: absolute;
+                        top: -10px;
+                        right: -15px;
+                        padding: 5px;
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 50%;
+                        background: $color-cornflower;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                     }
+                  }
                }
             }
          }
@@ -40,44 +59,10 @@
       .mobile-nav{
          padding: 10px 0;
 
-         .left-hidden-menu{
-            .customed-btn{
-               background: transparent;
-               border: none;
-            }
-
-            .offcanvas-customed{
-               top: 55px;
-               height: 70vh;
-
-
-               .offcanvas-body{
-                  ul{
-                     li{
-                        margin-bottom: 10px;
-
-                        a{
-                           color: $color-ash-black;
-                        }
-                     }
-                  }
-
-               }
-            }
-         }
-
          .search-box{
-            .customed-btn{
-               background: transparent;
-               border: none;
-            }
-
             .offcanvas-customed{
-               top: 55px;
                height: 50vh;
-
                .search-nav-collapse{
-                  
                   .wrap{
                      width: 75%;
                      position: absolute;
@@ -106,8 +91,7 @@
                         width: 100%;
                         position: relative;
                         display: flex;
-
-                                                
+                
                         .searchTerm {
                            width: 100%;
                            border: 3px solid $color-yellow;
@@ -155,31 +139,20 @@
             }
 
             .right-hidden-menu{
-               .customed-btn{
-                  background: transparent;
-                  border: none;
-               }
-   
                .offcanvas-customed{
-                  top: 55px;
                   height: 60vh;
-   
-                  .offcanvas-body{
-                     .log-in-n-contact-collapsed{
-                        ul{
-                           li{
-                              margin-bottom: 10px;
-      
+
+                  .log-in-n-contact-collapsed{
+                     ul{
+                        li{
+                           a{
+                              text-transform: uppercase;
+                           }
+
+                           p{
+                              color: $color-ash-black;
                               a{
-                                 text-transform: uppercase;
-                                 color: $color-ash-black;
-                              }
-   
-                              p{
-                                 color: $color-ash-black;
-                                 a{
-                                    color: $color-yellow;
-                                 }
+                                 color: $color-yellow;
                               }
                            }
                         }
