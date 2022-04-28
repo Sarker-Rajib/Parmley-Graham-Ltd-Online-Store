@@ -85,39 +85,8 @@
                         </div>
 
                         <div class="search-box">
-                          <button class="btn btn-primary customed-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#findOut" aria-controls="findOut">
-                            <i class="far fa-search"></i>
-                          </button>
-                          
-                          <div class="offcanvas offcanvas-top offcanvas-customed" tabindex="-1" id="findOut">
-                            <div class="offcanvas-header">
-                              <button type="button" class="off-btn btn search" data-bs-dismiss="offcanvas" aria-label="Close"><i class="far fa-times"></i></button>
-                            </div>
-                            <div class="offcanvas-body">
-                              <div class="search-nav-collapse">
-                                <form class="wrap text-center">
-                                  <div class="search">
-                                     <input type="text" class="searchTerm" placeholder="Search By Product Name">
-                                    <button type="submit" class="searchButton icon">
-                                      <i class="fas fa-search"></i>
-                                    </button>
-                                  </div>
-
-                                  <div class="mt-2">
-                                    <a class="text-dark" href="#">Multiple Parts ?</a>
-                                  </div>
-
-                                  <div class="d-flex justify-content-center ">
-                                    <button type="submit" class="searchButton text mx-1">
-                                      Search
-                                    </button>
-                                   <button type="submit" class="searchButton text mx-1" data-bs-dismiss="offcanvas">
-                                     Cancel
-                                  </button>
-                                  </div>
-                               </form>                            
-                              </div>
-                            </div>
+                          <div class="btn btn-primary customed-btn" data-bs-toggle="offcanvas" data-bs-target="#navSearchToggl" aria-controls="navSearchToggl">
+                            <i class="far fa-search btn-search"></i>
                           </div>
                         </div>
                       </nav>
@@ -162,6 +131,33 @@
       </div>
     </div>
 
+    <!-- search box offcanvus starts -->
+    <div class="offcanvas offcanvas-top offcanvas-customed search" tabindex="-1" id="navSearchToggl">
+      <div class="offcanvas-header">
+        <button type="button" class="btn off-btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="far fa-times"></i></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="search-nav-collapse">
+          <form class="wrap text-center">
+            <div class="search">
+              <input type="text" class="searchTerm" placeholder="Search By Product Name">
+              <button type="submit" class="searchButton icon">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <div class="text-start">
+              <a class="text-dark" href="#">Multiple Parts ?</a>
+            </div>
+  
+            <button type="submit" class="searchButton text" data-bs-dismiss="offcanvas">
+              Cancel
+            </button>
+        </form>                            
+        </div>
+      </div>
+    </div>
+    <!-- search box off ends-->
+
     <div class="category-nav d-none d-md-block ">
       <div class="container-fluid">
         <div class="content-holder">
@@ -171,37 +167,12 @@
                 <input class="input-area" type="text" placeholder=" Search" disabled>
                 <i class="far fa-search btn-search"></i>
               </div>
-              
-              <div class="offcanvas offcanvas-top offcanvas-customed" tabindex="-1" id="navSearchToggl">
-                <div class="offcanvas-header">
-                  <button type="button" class="btn off-btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="far fa-times"></i></button>
-                </div>
-                <div class="offcanvas-body">
-                  <div class="search-nav-collapse">
-                    <form class="wrap text-center">
-                      <div class="search">
-                        <input type="text" class="searchTerm" placeholder="Search By Product Name">
-                        <button type="submit" class="searchButton icon">
-                          <i class="fas fa-search"></i>
-                        </button>
-                      </div>
-                      <div class="text-start">
-                        <a class="text-dark" href="#">Multiple Parts ?</a>
-                      </div>
-    
-                      <button type="submit" class="searchButton text" data-bs-dismiss="offcanvas">
-                        Cancel
-                      </button>
-                  </form>                            
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
           <div class="link-scroller">
             <div class="service-link" id="linkContainer">
-              <ul class="contents">
+              <ul class="contents ps-3">
                 <li class="text-center"><a class="text-nowrap" href="#">Automation</a></li>
                 <li class="text-center"><a class="text-nowrap" href="#">Industry 4 & Robotics</a></li>
                 <li class="text-center"><a class="text-nowrap" href="#">Mechanical Axis</a></li>

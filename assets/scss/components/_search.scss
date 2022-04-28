@@ -1,5 +1,5 @@
-.search-box{
-   .offcanvas-customed{
+.offcanvas-customed{
+   &.search{
       height: 50vh;
       .search-nav-collapse{
          .wrap{
@@ -11,7 +11,7 @@
             @media(min-width:990px){
                width: 50%;
             }
-
+   
             .searchButton {
                height: 36px;
                padding: 0 10px;
@@ -22,23 +22,23 @@
                border-radius: 0 5px 5px 0;
                cursor: pointer;
                font-size: 20px;
-
+   
                &.text{
                   border-radius: 5px;
                   margin-top: 25px;
                }
-
+   
                @media(min-width: 768px) {
                   height: 55px;
                   padding: 0 20px;
                }
             }
-
+   
             .search {
                width: 100%;
                position: relative;
                display: flex;
-       
+         
                .searchTerm {
                   width: 100%;
                   border: 3px solid $color-yellow;
@@ -48,13 +48,13 @@
                   border-radius: 5px 0 0 5px;
                   outline: none;
                   color: $color-black;
-
+   
                   @media(min-width: 768px) {
                      height: 55px;
                   }
                }
             }
-          }
+            }
       }
    }
 }

@@ -1,0 +1,22 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "tabnine.experimentalAutoImports": true,
+    "liveSassCompile.settings.formats":[
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": "/assets/css"
+        }
+    ],
+    "editor.fontSize": 18,
+    "editor.tabSize": 3,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.iconTheme": "vscode-icons",
+    "scm.inputFontSize": 14,
+    "bracketPairColorizer.depreciation-notice": false,
+    "window.zoomLevel": -1,
+    "liveServer.settings.donotVerifyTags": true,
+    "color-highlight.sass.includePaths": [
+    
+    ]
+}
