@@ -1,6 +1,22 @@
 .offcanvas-customed{
-   top: 55px;
+   top: 122px;
    height: 75vh;
+   @media(max-width: 991px){
+      top: 199px;
+   }
+   @media(max-width: 767px){
+      top: 56px;
+   }
+
+   
+      .offcanvas-header{
+
+         .off-btn{
+            color: $color-white;
+            background: $color-cornflower;
+         }
+      }
+   
 
 
    .offcanvas-body{

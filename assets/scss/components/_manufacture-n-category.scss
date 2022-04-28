@@ -1,42 +1,46 @@
 .manufacture-n-category{
    padding: 30px 0;
 
-   .manufacture-n-category-card{
-      padding: 98px 42px;
-      display: grid;
-      place-items: center;
-
-      @media(max-width:767px){
-         padding: 30px;
-      }
-
-      &.first{
-         background: url(../images/blue-van-banner.jpg) no-repeat center center/cover;
-      }
-      &.second{
-         background: url(../images/green-woman-banner.jpg) no-repeat center center/cover;
-      }
-
-
-      h2{
-         font-family: Siemens-Sans-Bold;
-         font-size: 35px;
-         color: $color-white;
-         margin-bottom: 40px;
-      }      
-      p{
-         width: 75%;
-         font-family: Siemens-Sans-Regular;
-         font-size: 16px;
-         color: $color-white;
-         text-transform: uppercase;
-         padding: 16px 32px;
-         border: 1px solid $color-white;
-      } 
+   .card-holder{
+      background: $color-ash-black;
       
-      &:hover{
-         opacity: 0.7
+      .manufacture-n-category-card{
+         padding: 98px 42px;
+         display: grid;
+         place-items: center;
+   
+         @media(max-width:767px){
+            padding: 30px;
+         }
+   
+         &.first{
+            background: url(../images/blue-van-banner.jpg) no-repeat center center/cover;
+         }
+         &.second{
+            background: url(../images/green-woman-banner.jpg) no-repeat center center/cover;
+         }
+   
+   
+         h2{
+            font-family: Siemens-Sans-Bold;
+            font-size: 35px;
+            color: $color-white;
+            margin-bottom: 40px;
+         }   
+   
+         p{
+            width: 75%;
+            font-family: Siemens-Sans-Regular;
+            font-size: 16px;
+            color: $color-white;
+            text-transform: uppercase;
+            padding: 16px 32px;
+            border: 1px solid $color-white;
+         } 
+         
+         &:hover{
+            opacity: 0.7;
+         }
       }
    }
-
 }

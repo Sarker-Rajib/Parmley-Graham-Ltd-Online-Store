@@ -2,3 +2,9 @@ body {
   font-family: Siemens-Sans-Regular;
   color: $color-white;
 }
+
+@media(min-width: 1400px){
+  .container {
+    max-width: 1370px;
+  }
+}

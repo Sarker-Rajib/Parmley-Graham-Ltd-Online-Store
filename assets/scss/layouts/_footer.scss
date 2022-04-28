@@ -10,10 +10,12 @@
       ul{
          li{
             a{
+               display: block;
                font-family: Siemens-Sans-Regular;
                color: $color-white;
                font-size: 14px;
-               margin-bottom: 14px;
+               padding: 2px 0;
+               margin-bottom: 10px;
 
                &:hover{
                   opacity: 0.7;

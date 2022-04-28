@@ -42,7 +42,11 @@
    color: $color-white;
    background: transparent;
    border-radius: 0;
-   border: 1px solid $color-white;
+   border: 1px solid $color-off-white;
+
+   &:hover{
+      color: $color-off-white;
+   }
 }
 
 .partner-button{

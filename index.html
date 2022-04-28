@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Parmley Graham Ltd Online Store</title>
   <link rel='shortcut icon' href='assets/images/svg-icons/pg-logo.svg' type='image/x-icon'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/vendor/jssor/css/jssor.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
@@ -23,12 +24,12 @@
               <div class="row align-items-center">
                   <div class=" col-lg-5 text-center text-lg-start">
                       <div class="contact d-flex">
-                          <p class="pe-3">TECHNICAL SUPPORT <a href="tel:0191 478 0404" >0191 478 0404</a>
-                          <p>SALES <a href="tel:0191 478 0400" class="brand-orange">0191 478 0400</a></p>
+                          <p class="pe-3">TECHNICAL SUPPORT <a href="tel:01914780404" >0191 478 0404</a>
+                          <p>SALES <a href="tel:01914780400" class="brand-orange">0191 478 0400</a></p>
                       </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                      <a href="#"> <img class="img-fluid my-md-2 my-lg-0" src="assets/images/svg-icons/white-logo.svg" alt="parmley graham ltd" width="63"></a>
+                      <a href="#"> <img class="img-fluid my-md-3 my-lg-0" src="assets/images/svg-icons/white-logo.svg" alt="parmley graham ltd" width="63"></a>
                   </div>
                   <div class=" col-lg-5 text-center text-lg-end ">
                       <div class="row align-items-center">
@@ -55,9 +56,9 @@
                             <i class="far fa-bars"></i>
                           </button>
                           
-                          <div class="offcanvas offcanvas-top offcanvas-customed" tabindex="-1" id="leftcollapse" aria-labelledby="leftcollapseLabel">
+                          <div class="offcanvas offcanvas-top offcanvas-customed" tabindex="-1" id="leftcollapse" >
                             <div class="offcanvas-header">
-                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              <button type="button" class="btn off-btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="far fa-times"></i></button>
                             </div>
                             <div class="offcanvas-body">
                               <div class="category-nav-collapese">
@@ -79,7 +80,6 @@
                                     <li><a href="#">Vision & Lighting</a></li>
                                 </ul>                                
                               </div>
-  
                             </div>
                           </div>
                         </div>
@@ -89,26 +89,29 @@
                             <i class="far fa-search"></i>
                           </button>
                           
-                          <div class="offcanvas offcanvas-top offcanvas-customed" tabindex="-1" id="findOut" aria-labelledby="findOutLabel">
+                          <div class="offcanvas offcanvas-top offcanvas-customed" tabindex="-1" id="findOut">
                             <div class="offcanvas-header">
-                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              <button type="button" class="off-btn btn search" data-bs-dismiss="offcanvas" aria-label="Close"><i class="far fa-times"></i></button>
                             </div>
                             <div class="offcanvas-body">
                               <div class="search-nav-collapse">
                                 <form class="wrap text-center">
                                   <div class="search">
                                      <input type="text" class="searchTerm" placeholder="Search By Product Name">
-                                     <button type="submit" class="searchButton icon">
-                                       <i class="fas fa-search"></i>
+                                    <button type="submit" class="searchButton icon">
+                                      <i class="fas fa-search"></i>
                                     </button>
+                                  </div>
+
+                                  <div class="mt-2">
+                                    <a class="text-dark" href="#">Multiple Parts ?</a>
                                   </div>
 
                                   <div class="d-flex justify-content-center ">
                                     <button type="submit" class="searchButton text mx-1">
                                       Search
-                                   </button>
- 
-                                   <button type="submit" class="searchButton text mx-1"data-bs-dismiss="offcanvas">
+                                    </button>
+                                   <button type="submit" class="searchButton text mx-1" data-bs-dismiss="offcanvas">
                                      Cancel
                                   </button>
                                   </div>
@@ -117,8 +120,6 @@
                             </div>
                           </div>
                         </div>
-
-
                       </nav>
                   </div>
 
@@ -127,91 +128,104 @@
                   </div>
 
                   <div class="col-5 text-end">
-                      <nav class="d-flex justify-content-end align-items-center right-content">
-                        <div class="cart-area">
-                          <a class="cart-logo me-2 text-white" href="#"><i class="fal fa-shopping-cart cart"><sup class="sup">0</sup></i></a>
-                        </div>
+                    <nav class="d-flex justify-content-end align-items-center right-content">
+                      <div class="cart-area">
+                        <a class="cart-logo me-2 text-white" href="#"><i class="fal fa-shopping-cart cart"><sup class="sup">0</sup></i></a>
+                      </div>
 
-                        <div class="right-hidden-menu">
-                          <button class="btn btn-primary customed-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="far fa-ellipsis-v"></i></button>
+                      <div class="right-hidden-menu">
+                        <button class="btn btn-primary customed-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="far fa-ellipsis-v"></i></button>
 
-                          <div class="offcanvas offcanvas-top offcanvas-customed" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header text-end pt-2 pe-4">
-                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                              <div class="log-in-n-contact-collapsed">
-                                <ul class="text-start">
-                                  <li><a href="#"> <i class="fal fa-sign-in icon me-1"></i> LOGIN </a></li>
-                                  <li><a href="#"> <i class="fal fa-user icon me-1"></i> Create an ACCOUNT</a></li>
-                                  <li><a href="#"> <i class="far fa-question-circle icon me-1"></i>ASK A QUESTION  </a></li>
-                                  <li><a href="#"> <i class="fal fa-map-marker-alt me-1"></i> Location </a></li>
-                                  <li><a href="#"> <i class="far fa-info-circle"></i> about us </a></li>
-                                  <li><p class="pe-3">TECHNICAL SUPPORT<br><a href="tel:0191 478 0404" >0191 478 0404</a></li>
-                                  <li><p>SALES <br><a href="tel:0191 478 0400" class="brand-orange">0191 478 0400</a></p> </li>         
-                                </ul>
-                              </div>
+                        <div class="offcanvas offcanvas-top offcanvas-customed" tabindex="-1" id="offcanvasRight" >
+                          <div class="offcanvas-header text-end pt-4 pe-4">
+                            <button type="button" class="btn off-btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="far fa-times"></i></button>
+                          </div>
+                          <div class="offcanvas-body">
+                            <div class="log-in-n-contact-collapsed">
+                              <ul class="text-start">
+                                <li><a href="#"> <i class="fal fa-sign-in icon me-1"></i> LOGIN </a></li>
+                                <li><a href="#"> <i class="fal fa-user icon me-1"></i> Create an ACCOUNT</a></li>
+                                <li><a href="#"> <i class="far fa-question-circle icon me-1"></i>ASK A QUESTION  </a></li>
+                                <li><a href="#"> <i class="fal fa-map-marker-alt me-1"></i> Location </a></li>
+                                <li><a href="#"> <i class="far fa-info-circle"></i> about us </a></li>
+                                <li><p class="pe-3">TECHNICAL SUPPORT<br><a href="tel:01914780404" >0191 478 0404</a></li>
+                                <li><p>SALES <br><a href="tel:01914780400" class="brand-orange">0191 478 0400</a></p> </li>         
+                              </ul>
                             </div>
                           </div>
                         </div>
-                      </nav>
+                      </div>
+                    </nav>
                   </div>
               </div>
           </div>
       </div>
-  </div>
+    </div>
 
-  <div class="category-nav d-none d-md-block bg-light">
-    <div class="container-fluid">
-      <ul class="contents">
-        <li class="search-box">
-          <button class="btn btn-primary customed-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#navSearchToggl" aria-controls="navSearchToggl">
-            <input class="input-area" type="text" placeholder=" Search" disable>
-            <i class="far fa-search btn-search"></i>
-          </button>
-          
-          <div class="offcanvas offcanvas-top offcanvas-customed" tabindex="-1" id="navSearchToggl" aria-labelledby="navSearchTogglLabel">
-            <div class="offcanvas-header">
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <div class="search-nav-collapse">
-                <form class="wrap text-center">
-                  <div class="search">
-                     <input type="text" class="searchTerm" placeholder="Search By Product Name">
-                     <button type="submit" class="searchButton icon">
-                       <i class="fas fa-search"></i>
-                    </button>
+    <div class="category-nav d-none d-md-block ">
+      <div class="container-fluid">
+        <div class="content-holder">
+          <div class="search-nav-button">
+            <div class="search-box">
+              <div class="btn btn-primary customed-btn" data-bs-toggle="offcanvas" data-bs-target="#navSearchToggl" aria-controls="navSearchToggl">
+                <input class="input-area" type="text" placeholder=" Search" disabled>
+                <i class="far fa-search btn-search"></i>
+              </div>
+              
+              <div class="offcanvas offcanvas-top offcanvas-customed" tabindex="-1" id="navSearchToggl">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn off-btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="far fa-times"></i></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="search-nav-collapse">
+                    <form class="wrap text-center">
+                      <div class="search">
+                        <input type="text" class="searchTerm" placeholder="Search By Product Name">
+                        <button type="submit" class="searchButton icon">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </div>
+                      <div class="text-start">
+                        <a class="text-dark" href="#">Multiple Parts ?</a>
+                      </div>
+    
+                      <button type="submit" class="searchButton text" data-bs-dismiss="offcanvas">
+                        Cancel
+                      </button>
+                  </form>                            
                   </div>
-
-                  <button type="submit" class="searchButton text"data-bs-dismiss="offcanvas">
-                     Cancel
-                  </button>
-               </form>                            
+                </div>
               </div>
             </div>
           </div>
-        </li>
-        <li><a href="#">Automation</a></li>
-        <li><a href="#">Industry 4 & Robotics</a></li>
-        <li><a href="#">Mechanical Axis</a></li>
-        <li><a href="#">Industrial <br> Communication</a></li>
-        <li><a href="#">Identification</a></li>
-        <li><a href="#">Variable Speed Drives</a></li>
-        <li><a href="#">LV Controlgear</a></li>
-        <li><a href="#">Switchgear and <br> Circuit Protection</a></li>
-        <li><a href="#">Power Supplies & <br> Transformers</a></li>
-        <li><a href="#">Safety</a></li>
-        <li><a href="#">Process <br> Instrumentation</a></li>
-        <li><a href="#">Terminals & <br> Connection System</a></li>
-        <li><a href="#">Enclosures & <br> Climate Control</a></li>
-        <li><a href="#">Enclosures & Climate Control</a></li>
-        <li><a href="#">Sensors</a></li>
-        <li><a href="#">Vision & Lighting</a></li>
-      </ul>
+
+          <div class="link-scroller">
+            <div class="service-link" id="linkContainer">
+              <ul class="contents">
+                <li class="text-center"><a class="text-nowrap" href="#">Automation</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Industry 4 & Robotics</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Mechanical Axis</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Industrial <br> Communication</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Identification</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Variable Speed Drives</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">LV Controlgear</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Switchgear and <br> Circuit Protection</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Power Supplies & <br> Transformers</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Safety</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Process <br> Instrumentation</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Terminals & <br> Connection System</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Enclosures & <br> Climate Control</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Enclosures & Climate Control</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Sensors</a></li>
+                <li class="text-center"><a class="text-nowrap" href="#">Vision & Lighting</a></li>
+              </ul>
+            </div>
+            <button class="arrow prev btn" id="slideBack" type="button"><i class="fal fa-arrow-square-left"></i></button>
+            <button class="arrow next btn" id="slide" type="button"><i class="fal fa-arrow-square-right"></i></button>    
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  
   </header>
   <!-- ===//end of header section === -->
 
@@ -228,7 +242,9 @@
           </div>
           <div class="col-md-6 d-none d-md-block">
             <div class="text text-end">
-              <img src="assets/images/svg-icons/siemens-approved-partner.svg" alt="siemens">
+              <a href="#">
+                <img src="assets/images/svg-icons/siemens-approved-partner.svg" alt="siemens">
+              </a>
             </div>
           </div>
         </div>
@@ -270,8 +286,10 @@
           </div>
   
           <div class="col-md-4 col-12">
-            <div class="image text-center text-md-end ">
-              <img class="img-fluid" src="assets/images/siemens_configurator2.png" alt="siemens">
+            <div class="image text-center text-md-end">
+              <a href="#">
+                <img class="img-fluid" src="assets/images/siemens_configurator2.png" alt="siemens">
+              </a>
             </div>
           </div>
         </div>
@@ -314,20 +332,24 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 mb-2 mb-md-0">
-          <a class="h-100 d-block" href="#">
-            <div class="manufacture-n-category-card text-center first h-100">
-              <h2>Select By Manufacturer</h2>
-              <p>the top names in industrial automation</p>
-            </div>
-          </a>
+          <div class="card-holder h-100">
+            <a class="h-100 d-block " href="#">
+              <div class="manufacture-n-category-card text-center first h-100">
+                <h2>Select By Manufacturer</h2>
+                <p>the top names in industrial automation</p>
+              </div>
+            </a>
+          </div>
         </div>
         <div class="col-md-6">
-          <a href="#">
-            <div class="manufacture-n-category-card text-center second">
-              <h2>Select By Product Category</h2>
-              <p>the best products for your needs</p>
-            </div>
-          </a>
+          <div class="card-holder h-100">
+            <a class="h-100 d-block" href="#">
+              <div class="manufacture-n-category-card text-center second h-100">
+                <h2>Select By Product Category</h2>
+                <p>the best products for your needs</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -337,15 +359,16 @@
 
   <!-- === slider-carousel section start === -->
   <section class="slider-carousel">
+    <h2 class="d-none">Header</h2>
     <div class="container">
       <div class="slider-canvus" id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="assets/images/jssore-images/double-tail-spin.svg" />
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="assets/images/jssore-images/double-tail-spin.svg" alt="load-spin"/>
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
             <div style="background-color:#000000;">
-                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/1.jpg" />
+                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/1.jpg" alt="image"/>
                 <div data-ts="flat" data-p="370" style="left:135px;top:82px;width:553px;height:187px;position:absolute;overflow:hidden;">
                     <div data-to="50% 50%" data-ts="preserve-3d" data-t="0" style="left:558px;top:-14px;width:550px;height:90px;position:absolute;overflow:hidden;">
                         <div data-to="50% 50%" data-ts="preserve-3d" data-arr="1" style="left:1px;top:17px;width:349px;height:23px;position:absolute;color:#395797;font-family:Roboto,sans-serif;font-size:22px;font-weight:900;line-height:1.2;letter-spacing:0.1em;">SIMATIC Robotic Integrator</div>
@@ -354,7 +377,7 @@
                 </div>
             </div>
             <div style="background-color:#000000;">
-                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/2.jpg" />
+                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/2.jpg" alt="image"/>
                 <div data-ts="flat" data-p="358" style="left:139px;top:80px;width:561px;height:154px;position:absolute;overflow:hidden;">
                     <div data-to="50% 50%" data-ts="preserve-3d" data-t="6" style="left:550px;top:0px;width:550px;height:90px;position:absolute;overflow:hidden;">
                         <div data-to="50% 50%" data-ts="preserve-3d" data-arr="7" style="left:8px;top:5px;width:200px;height:27px;position:absolute;color:#395797;font-family:Roboto,sans-serif;font-size:24px;font-weight:900;line-height:1.2;letter-spacing:0.1em;"><div>Meet Bob<br /></div></div>
@@ -363,7 +386,7 @@
                 </div>
             </div>
             <div style="background-color:#000000;">
-                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/3.jpg" />
+                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/3.jpg" alt="image"/>
                 <div data-ts="flat" data-p="383" style="left:144px;top:80px;width:543px;height:222px;position:absolute;overflow:hidden;">
                     <div data-to="50% 50%" data-ts="preserve-3d" data-t="9" style="left:550px;top:0px;width:550px;height:90px;position:absolute;overflow:hidden;">
                         <div data-to="50% 50%" data-ts="preserve-3d" data-arr="10" style="left:4px;top:4px;width:258px;height:20px;position:absolute;color:#395797;font-family:Roboto,sans-serif;font-size:24px;font-weight:900;line-height:1.2;letter-spacing:0.1em;">Process Control</div>
@@ -372,7 +395,7 @@
                 </div>
             </div>
             <div style="background-color:#000000;">
-                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/4.jpg" />
+                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/4.jpg" alt="image"/>
                 <div data-ts="flat" data-p="384" style="left:139px;top:82px;width:557px;height:210px;position:absolute;overflow:hidden;">
                     <div data-to="50% 50%" data-ts="preserve-3d" data-t="12" style="left:550px;top:0px;width:550px;height:90px;position:absolute;overflow:hidden;">
                         <div data-to="50% 50%" data-ts="preserve-3d" data-arr="13" style="left:5px;top:3px;width:365px;height:27px;position:absolute;color:#395797;font-family:Roboto,sans-serif;font-size:24px;font-weight:900;line-height:1.2;letter-spacing:0.1em;">Material Handling</div>
@@ -381,7 +404,7 @@
                 </div>
             </div>
             <div style="background-color:#000000;">
-                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/5.jpg" />
+                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/5.jpg" alt="image"/>
                 <div data-ts="flat" data-p="322" style="left:144px;top:80px;width:553px;height:90px;position:absolute;overflow:hidden;">
                     <div data-to="50% 50%" data-ts="preserve-3d" data-t="15" style="left:550px;top:0px;width:860px;height:90px;position:absolute;overflow:hidden;">
                         <div data-to="50% 50%" data-ts="preserve-3d" data-arr="16" style="left:1px;top:7px;width:434px;height:20px;position:absolute;color:#395797;font-family:Roboto,sans-serif;font-size:20px;font-weight:900;line-height:1.2;letter-spacing:0.1em;">How Industry 4 Can Help You&nbsp;</div>
@@ -390,7 +413,7 @@
                 </div>
             </div>
             <div style="background-color:#000000;">
-                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/6.jpg" />
+                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/6.jpg" alt="image"/>
                 <div data-ts="flat" data-p="320" style="left:144px;top:80px;width:550px;height:90px;position:absolute;overflow:hidden;">
                     <div data-to="50% 50%" data-ts="preserve-3d" data-t="18" style="left:550px;top:0px;width:550px;height:90px;position:absolute;overflow:hidden;">
                         <div data-to="50% 50%" data-ts="preserve-3d" data-arr="19" style="left:1px;top:3px;width:294px;height:20px;position:absolute;color:#395797;font-family:Roboto,sans-serif;font-size:24px;font-weight:900;line-height:1.2;letter-spacing:0.1em;"><div>Ewon Netbiter Starter<br /></div></div>
@@ -399,7 +422,7 @@
                 </div>
             </div>
             <div style="background-color:#000000;">
-                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/7.jpg" />
+                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/7.jpg" alt="image"/>
                 <div data-ts="flat" data-p="320" style="left:144px;top:80px;width:550px;height:90px;position:absolute;overflow:hidden;">
                     <div data-to="50% 50%" data-ts="preserve-3d" data-t="21" style="left:550px;top:0px;width:550px;height:90px;position:absolute;overflow:hidden;">
                         <div data-to="50% 50%" data-ts="preserve-3d" data-arr="22" style="left:29px;top:6px;width:298px;height:20px;position:absolute;color:#395797;font-family:Roboto,sans-serif;font-size:24px;font-weight:900;line-height:1.2;letter-spacing:0.1em;">TIA Selection Tool</div>
@@ -408,7 +431,7 @@
                 </div>
             </div>
             <div style="background-color:#000000;">
-                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/8.jpg" />
+                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/8.jpg" alt="image"/>
                 <div data-ts="flat" data-p="320" style="left:144px;top:80px;width:550px;height:90px;position:absolute;overflow:hidden;">
                     <div data-to="50% 50%" data-ts="preserve-3d" data-t="24" style="left:550px;top:0px;width:550px;height:90px;position:absolute;overflow:hidden;">
                         <div data-to="50% 50%" data-ts="preserve-3d" data-arr="25" style="left:2px;top:5px;width:318px;height:20px;position:absolute;color:#395797;font-size:24px;font-weight:700;line-height:1.2;letter-spacing:0.1em;">Motion Starter Kits&nbsp;</div>
@@ -417,7 +440,7 @@
                 </div>
             </div>
             <div style="background-color:#000000;">
-                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/9.jpg" />
+                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/9.jpg" alt="image"/>
                 <div data-ts="flat" data-p="320" style="left:144px;top:80px;width:550px;height:90px;position:absolute;overflow:hidden;">
                     <div data-to="50% 50%" data-ts="preserve-3d" data-t="27" style="left:550px;top:0px;width:550px;height:90px;position:absolute;overflow:hidden;">
                         <div data-to="50% 50%" data-ts="preserve-3d" data-arr="28" style="left:3px;top:4px;width:349px;height:20px;position:absolute;color:#e04338;font-family:Roboto,sans-serif;font-size:24px;font-weight:900;line-height:1.2;letter-spacing:0.1em;">SAWYER <span style="color: black"> BLACK </span> EDITION</div>
@@ -426,7 +449,7 @@
                 </div>
             </div>
             <div style="background-color:#000000;">
-                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/10.jpg" />
+                <img data-u="image" style="opacity:1;" src="assets/images/jssore-images/10.jpg" alt="image"/>
                 <div data-ts="flat" data-p="320" style="left:144px;top:80px;width:550px;height:90px;position:absolute;overflow:hidden;">
                     <div data-to="50% 50%" data-ts="preserve-3d" data-t="30" style="left:550px;top:0px;width:550px;height:90px;position:absolute;overflow:hidden;">
                         <div data-to="50% 50%" data-ts="preserve-3d" data-arr="31" style="left:-1px;top:7px;width:368px;height:20px;position:absolute;color:#395797;font-family:Roboto,sans-serif;font-size:24px;font-weight:900;line-height:1.2;letter-spacing:0.1em;">Simplified Motion Series&nbsp;</div>
@@ -497,19 +520,19 @@
 
       <div class="module-2">
         <div class="row">
-          <div class="col-12 col-md-6 mb-4">
-            <div class="module-bottom first h-100 mb-5">
+          <div class="col-12 col-md-6 my-3 my-md-0">
+            <div class="module-bottom first h-100">
               <h2>CAREERS WITH<br>PARMLEY GRAHAM</h2>
               <p>Join one of the leading players in the UK’s industrial automation sector. We can give driven people everything they need to flourish.</p>
               <a class="btn module-two-button" href="#">VIEW JOBS</a>
             </div>
           </div>
-          <div class="col-12 col-md-6 mb-4">
+          <div class="col-12 col-md-6">
             <div class="module-bottom second h-100">
               <h2>LATEST INDUSTRY <br>
                 NEWS AND INSIGHTS</h2>
               <p>We pride ourselves on adding real value to our customers' production processes and being far more than just another distributor.</p>
-              <a class="btn module-two-button" left="" href="/careers">latest news</a>
+              <a class="btn module-two-button" href="#">latest news</a>
             </div>
           </div>
         </div>
@@ -542,7 +565,9 @@
     <div class="footer-top">
       <div class="container">
         <div class="logo mb-4 text-center text-lg-start">
-          <img src="assets/images/svg-icons/white-logo.svg" alt="logo">
+          <a href="#">
+            <img src="assets/images/svg-icons/white-logo.svg" alt="logo">
+          </a>
         </div>
         <div class="row">
           <div class="col-lg-2 col-md-6 text-lg-start text-center">
@@ -589,12 +614,14 @@
             </ul>
           </div>
           <div class="col-lg-3 col-md-12 text-lg-end text-center mt-4 m-lg-0">
-              <p><img class="img-fluid" src="assets/images/svg-icons/siemens-approved-partner.svg" alt="Siemens Approved Partner"></p>
+              <a href="#">
+                <img class="img-fluid" src="assets/images/svg-icons/siemens-approved-partner.svg" alt="Siemens Approved Partner">
+              </a>
               <p class="py-4">
-                TECHNICAL SUPPORT<br><a href="tel:0191 478 0404" class="brand-orange">0191 478 0404</a>
+                TECHNICAL SUPPORT<br><a href="tel:01914780404" class="brand-orange">0191 478 0404</a>
               </p>
               <p>
-                SALES<br><a href="tel:0191 478 0400" class="brand-orange">0191 478 0400</a>
+                SALES<br><a href="tel:01914780400" class="brand-orange">0191 478 0400</a>
               </p>
           </div>
         </div>
@@ -618,8 +645,9 @@
 
   <!-- ///// sCRIPTS sTARTS hERE -->
   <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/vendor/jssor/js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
-  <script src="assets/vendor/jssor/js/init.js" type="text/javascript"></script>
+  <script src="assets/vendor/jssor/js/jssor.slider-28.1.0.min.js"></script>
+  <script src="assets/vendor/jssor/js/init.js"></script>
+  <script src="assets/js/custom.js"></script>
   <!-- SCRIPT eNDS -->
 </body>
 </html>
